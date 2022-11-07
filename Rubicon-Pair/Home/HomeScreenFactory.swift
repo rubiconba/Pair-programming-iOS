@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum HomeStoreScreenFactory {
+class HomeStoreScreenFactory {
     static func makeModule() -> HomeViewController {
         let storyboard = UIStoryboard(name: Storyboards.home.name, bundle: nil)
         let view = storyboard.instantiateViewController(withIdentifier: Storyboards.home.name) as! HomeViewController
